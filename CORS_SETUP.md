@@ -9,8 +9,11 @@ This guide explains how to set up environment variables for CORS configuration w
 Set these environment variables in your Vercel backend project:
 
 ```
-FRONTEND_URL=https://smartsupply-three.vercel.app
-VERCEL_FRONTEND_URL=https://smartsupply-three.vercel.app
+FRONTEND_URL=https://notificationfe.vercel.app
+VERCEL_FRONTEND_URL=https://notificationfe.vercel.app
+DATABASE_URL=your_database_connection_string
+JWT_SECRET=your_jwt_secret_key
+NODE_ENV=production
 ```
 
 ### For Frontend (Vercel)
@@ -18,7 +21,8 @@ VERCEL_FRONTEND_URL=https://smartsupply-three.vercel.app
 Set this environment variable in your Vercel frontend project:
 
 ```
-VITE_API_BASE_URL=https://smart-be-three.vercel.app/api
+VITE_API_BASE_URL=https://notificationbe.vercel.app/api
+VITE_API_URL=https://notificationbe.vercel.app
 ```
 
 ## How to Set Environment Variables in Vercel
@@ -27,14 +31,18 @@ VITE_API_BASE_URL=https://smart-be-three.vercel.app/api
 1. Go to your backend project in Vercel dashboard
 2. Click "Settings" → "Environment Variables"
 3. Add:
-   - `FRONTEND_URL` = `https://smartsupply-three.vercel.app`
-   - `VERCEL_FRONTEND_URL` = `https://smartsupply-three.vercel.app`
+   - `FRONTEND_URL` = `https://notificationfe.vercel.app`
+   - `VERCEL_FRONTEND_URL` = `https://notificationfe.vercel.app`
+   - `DATABASE_URL` = `your_database_connection_string`
+   - `JWT_SECRET` = `your_jwt_secret_key`
+   - `NODE_ENV` = `production`
 
 ### Frontend Project:
 1. Go to your frontend project in Vercel dashboard
 2. Click "Settings" → "Environment Variables"
 3. Add:
-   - `VITE_API_BASE_URL` = `https://smart-be-three.vercel.app/api`
+   - `VITE_API_BASE_URL` = `https://notificationbe.vercel.app/api`
+   - `VITE_API_URL` = `https://notificationbe.vercel.app`
 
 ## Benefits
 
@@ -53,6 +61,6 @@ After setting environment variables:
 
 ## Current Configuration
 
-- **Frontend**: https://smartsupply-three.vercel.app/
-- **Backend**: https://smart-be-three.vercel.app/
-- **API Base**: https://smart-be-three.vercel.app/api
+- **Frontend**: https://notificationfe.vercel.app/
+- **Backend**: https://notificationbe.vercel.app/
+- **API Base**: https://notificationbe.vercel.app/api
