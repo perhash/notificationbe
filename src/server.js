@@ -25,6 +25,7 @@ const io = new Server(server, {
       'http://localhost:8080',
       'http://127.0.0.1:3000',
       'http://127.0.0.1:8080',
+      'https://notificationfe.vercel.app',
       process.env.FRONTEND_URL,
       process.env.VERCEL_FRONTEND_URL,
     ].filter(Boolean),
@@ -48,6 +49,7 @@ const corsOptions = {
       'http://localhost:8080',
       'http://127.0.0.1:3000',
       'http://127.0.0.1:8080',
+      'https://notificationfe.vercel.app',
       process.env.FRONTEND_URL,
       process.env.VERCEL_FRONTEND_URL,
     ].filter(Boolean);
@@ -125,6 +127,7 @@ app.get('/api/cors-test', (req, res) => {
     method: req.method,
     allowedOrigins: [
       'http://localhost:8080',
+      'https://notificationfe.vercel.app',
       process.env.FRONTEND_URL,
       process.env.VERCEL_FRONTEND_URL,
     ].filter(Boolean),
