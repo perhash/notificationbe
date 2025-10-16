@@ -299,6 +299,11 @@ if (process.env.NODE_ENV !== 'production') {
     console.log(`🌐 Frontend URL: ${process.env.FRONTEND_URL || 'http://localhost:3000'}`);
     console.log(`🔌 WebSocket server ready`);
   });
+} else {
+  // For Vercel production, just log that the app is ready
+  console.log(`🚀 SmartSupply Backend Server ready for Vercel`);
+  console.log(`📍 Environment: ${process.env.NODE_ENV}`);
+  console.log(`🌐 Frontend URL: ${process.env.FRONTEND_URL || process.env.VERCEL_FRONTEND_URL}`);
 }
 
 export default app;
